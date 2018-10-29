@@ -1,0 +1,115 @@
+@import url("display.less");
+header {
+  height: 100vh;
+  background: url(../assets/banner.jpg) no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  overflow: hidden;
+
+  .color_cover {
+    height: inherit;
+    background: linear-gradient(
+      0deg,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    );
+    .head_conteiner {
+      height: 100%;
+      padding-bottom: 50px;
+      .head_content {
+        .display-box(flex, space-between, 0);
+        padding: 30px 0 30px 0;
+        .logo {
+          .display-box(flex, 0, center);
+        }
+        p {
+          font-size: 30px;
+          font-weight: 900;
+        }
+        .navigation {
+          .display-box(flex, 0, 0);
+          a,
+          i {
+            margin: 20px;
+            cursor: pointer;
+            box-sizing: border-box;
+          }
+          .links {
+            .display-box(flex, 0, 0);
+            a,
+            a:visited {
+              color: #ffffff;
+              text-decoration: none;
+              transition: 0.5s;
+              text-transform: uppercase;
+              position: relative;
+            }
+            a::before {
+              content: "";
+              position: absolute;
+              border-bottom: 3px solid rgb(252, 227, 138);
+              width: 100%;
+              bottom: -12px;
+              opacity: 0;
+              transition: 0.5s;
+            }
+            a:hover,
+            a:hover::before {
+              opacity: 1;
+              color: rgb(252, 227, 138);
+            }
+          }
+        }
+      }
+      .main_logo {
+        margin-top: 50px;
+        margin: 0 auto;
+        width: 800px;
+        text-align: center;
+        h2 {
+          font-family: "Kaushan Script", cursive;
+          font-size: 72px;
+          user-select: none;
+        }
+        h1 {
+          user-select: none;
+          font-size: 150px;
+          font-weight: 700;
+          text-transform: uppercase;
+          position: relative;
+          padding: 30px 0;
+        }
+        h1::before {
+          content: "";
+          position: absolute;
+          border-bottom: 3px solid #fff;
+          width: 60px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          bottom: -12px;
+          transition: 0.5s;
+        }
+      }
+      .but {
+        margin: 70px;
+        .display-box(flex, center, 0);
+        button {
+          cursor: pointer;
+          user-select: none;
+          border: 3px solid #fff;
+          box-sizing: border-box;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: uppercase;
+          background-color: transparent;
+          padding: 15px 33px;
+          transition: 0.5s;
+        }
+        button:hover {
+          background: #f38181;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import url("display.less");
+footer {
+  background: #f8f8f8;
+  .foot_marg {
+    padding-top: 75px;
+    .foot_main {
+      .display-box(flex, space-between, 0);
+      padding-bottom: 70px;
+      border-bottom: 1px solid #e5e5e5;
+      .foot_blogs,
+      .foot_insta {
+        width: 23vw;
+      }
+      .foot_Mogo {
+        width: 27vw;
+        .foot_Mogo_text {
+          span {
+            color: #cccccc;
+            font-size: 46px;
+            font-weight: 700;
+          }
+          p {
+            margin-top: 40px;
+            color: #999999;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+        .follower {
+          margin-top: 40px;
+          .follow_num {
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 18px;
+            margin-bottom: 18px;
+            span {
+              color: #333333;
+              font-size: 14px;
+              font-weight: 700;
+              strong {
+                font-size: 18px;
+              }
+            }
+          }
+          .follow_links {
+            span {
+              color: #999999;
+              font-size: 15px;
+              font-weight: 300;
+              font-style: italic;
+            }
+            i {
+              color: #95e1d3;
+              margin: 0 5px;
+            }
+          }
+          .form {
+            margin: 40px 0;
+            input {
+              width: 230px;
+              height: 40px;
+              border: 1px solid #e7e7e7;
+              box-sizing: border-box;
+              padding-left: 15px;
+              float: left;
+            }
+            button {
+              border: none;
+              padding: 12px;
+            }
+          }
+        }
+      }
+      .foot_blogs > p,
+      .foot_insta > p {
+        margin-bottom: 40px;
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+      .foot_blogs {
+        .blogs_cont {
+          display: flex;
+          margin-bottom: 30px;
+          img {
+            margin-right: 20px;
+          }
+          .blogs_text {
+            .display-box(flex, center, flex-start);
+            flex-direction: column;
+            p {
+              font-size: 12px;
+              font-weight: 800;
+              line-height: 18px;
+              text-transform: uppercase;
+              margin-bottom: 10px;
+            }
+            span {
+              color: #999999;
+              font-size: 13px;
+              font-weight: 300;
+              font-style: italic;
+            }
+          }
+        }
+      }
+      .foot_insta {
+        .insta_photos {
+          max-width: 355px;
+          margin-bottom: 20px;
+        }
+        span {
+          font-size: 13px;
+          font-style: italic;
+        }
+      }
+    }
+    .foot_lisence {
+      padding: 25px 0;
+      text-align: center;
+      strong {
+        font-size: 14px;
+        font-weight: 800;
+        span {
+          color: #f38181;
+        }
+      }
+    }
+  }
+}
